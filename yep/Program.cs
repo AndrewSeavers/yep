@@ -10,12 +10,15 @@ namespace yep
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("How many pizzas do you want? "); //Asks the user how many pizzas they would like to eat
+            // Asks the user how many pizzas they would like to eat
+            Console.WriteLine("How many pizzas do you want? "); 
             int answer = int.Parse(Console.ReadLine());
 
-            for (int i = 0; i < answer; i++) //Loops the following for the number of times that you wanted pizzas
+            // Loops the following for the number of times that you wanted pizzas
+            for (int i = 0; i < answer; i++ )
             {
-                Console.WriteLine("Eat pizza number " + (i + 1)); //Concatinates the number of the pizza with the string before it
+                // Concatinates the number of the pizza with the string before it
+                Console.WriteLine("Eat pizza number " + (i + 1)); 
             }
             Console.ReadLine();
         }
