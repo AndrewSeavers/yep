@@ -15,13 +15,15 @@ namespace yep
             int answer = int.Parse(Console.ReadLine());
 
             // Loops the following for the number of times that you wanted pizzas
-            for (int i = 0; i < answer; i++ )
+            for (int i = 0; i < answer; i++)
             {
                 // Concatinates the number of the pizza with the string before it
-                Console.WriteLine("Eat pizza number " + (i + 1)); 
+                Console.WriteLine("Eat pizza number " + (i + 1));
             }
 
-            for(int minutes = 16; minutes >=0; minutes--) {
+            for(int minutes = 16; minutes >=0; minutes--)
+            {
+                // Counts down from the number of minutes left in the lesson to the end of the lesson
                 Console.WriteLine(minutes + " minutes left");
             }
             Console.ReadLine();
