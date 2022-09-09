@@ -20,6 +20,10 @@ namespace yep
                 // Concatinates the number of the pizza with the string before it
                 Console.WriteLine("Eat pizza number " + (i + 1)); 
             }
+
+            for(int minutes = 16; minutes >=0; minutes--) {
+                Console.WriteLine(minutes + " minutes left");
+            }
             Console.ReadLine();
         }
     }
