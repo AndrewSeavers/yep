@@ -11,6 +11,7 @@ namespace yep
         static void Main(string[] args)
         {
             Random rnd = new Random();
+            string break1 = "n";
             
             // Asks the user how many pizzas they would like to eat
             Console.WriteLine("How many pizzas do you want? "); 
@@ -30,11 +31,13 @@ namespace yep
             }
 
             //Generate and print a random number between 1 and 10
-            while (true)
+            while (break1 != "y")
             {
                 int r = rnd.Next(0, 10);
                 Console.WriteLine(r);
-                Console.ReadLine();
+                break1 = Console.ReadLine();
+                
+
             }
 
         }
