@@ -10,6 +10,8 @@ namespace yep
     {
         static void Main(string[] args)
         {
+            Random rnd = new Random();
+            
             // Asks the user how many pizzas they would like to eat
             Console.WriteLine("How many pizzas do you want? "); 
             int answer = int.Parse(Console.ReadLine());
@@ -26,7 +28,15 @@ namespace yep
                 // Counts down from the number of minutes left in the lesson to the end of the lesson
                 Console.WriteLine(minutes + " minutes left");
             }
-            Console.ReadLine();
+
+            //Generate and print a random number between 1 and 10
+            while (true)
+            {
+                int r = rnd.Next(0, 10);
+                Console.WriteLine(r);
+                Console.ReadLine();
+            }
+
         }
     }
 }
